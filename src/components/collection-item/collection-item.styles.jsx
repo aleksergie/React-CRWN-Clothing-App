@@ -11,7 +11,7 @@ export const CollectionItemContainer = styled.div`
   cursor: pointer;
   transition: all 0.4s ease;
   backface-visibility: hidden;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 
   &:hover {
     transform: translateY(-10px) scale(1.04);
