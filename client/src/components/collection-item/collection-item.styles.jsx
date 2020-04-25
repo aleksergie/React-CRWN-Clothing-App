@@ -13,6 +13,21 @@ export const CollectionItemContainer = styled.div`
   backface-visibility: hidden;
   margin-bottom: 40px;
 
+  @media screen and (max-width: 800px) {
+    height: 190px;
+    &:hover {
+      transform: translateY(-10px) scale(1.04);
+      .image {
+        box-shadow: 0px -1px 26px -2px rgba(31, 31, 31, 1);
+        opacity: unset;
+        border: none;
+      }
+      button {
+        opacity: unset;
+      }
+    }
+  }
+
   &:hover {
     transform: translateY(-10px) scale(1.04);
     .image {
@@ -33,6 +48,14 @@ export const AddButton = styled(CustomButton)`
   opacity: 0.7;
   position: absolute;
   display: none;
+
+  @media screen and (max-width: 800px) {
+    display: block;
+    opacity: 0.9;
+    min-width: unset;
+    padding: 0 10px;
+    top: 115px;
+  }
 `;
 
 export const BackgroundImage = styled.div`
@@ -52,6 +75,11 @@ export const CollectionFooterContainer = styled.div`
   display: flex;
   justify-content: space-between;
   font-size: 18px;
+
+  @media screen and (max-width: 800px) {
+    height: 4%;
+    font-size: 9px;
+  }
 `;
 
 export const NameContainer = styled.span`

@@ -76,5 +76,11 @@ export const CustomButtonContainer = styled.button`
   cursor: pointer;
   transition: all 0.2s linear;
 
+  @media screen and (max-width: 800px) {
+    padding: 0 5px;
+    font-size: 10px;
+    line-height: 10px;
+  }
+
   ${getButtonStyles}
 `;
